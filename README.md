@@ -59,10 +59,15 @@ _Install virtualenv:_
 _Create a virtualenv._
 
 `$ mkdir -p ~/Envs`
+
 `$ cd ~/Envs`
+
 `$ virtualenv --no-site-packages infochimps`
+
 `$ source ~/Envs/bin/activate`
+
 `(infochimps) cd /path/to/infochimpy`
+
 `(infochimps) python setup.py install`
 
 `$ ./chimpshell.py`
