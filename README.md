@@ -70,5 +70,5 @@ _Create a virtualenv._
 
 `(infochimps) python setup.py install`
 
-`$ ./chimpshell.py`
+`(infochimps) ./chimpshell.py`
 
