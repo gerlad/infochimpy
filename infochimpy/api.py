@@ -111,8 +111,8 @@ class API(object):
         require_auth = False,
     )
     
-    """ Perform bulk look up of users from user ID or screenname """
     def lookup_users(self, user_ids=None, screen_names=None):
+        """ Perform bulk look up of users from user ID or screenname """
         return self._lookup_users(list_to_csv(user_ids), list_to_csv(screen_names))
 
     _lookup_users = bind_api(
