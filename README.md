@@ -7,29 +7,26 @@ Infochimpy is intended to be used from within an application, an example is [dja
 
 It may also be used through an interactive shell:
 
-`$ ./chimpshell.py`
+    $ ./chimpshell.py   
 
-Launching the shell creates an api instance that will allow you to execute requests against the Infochimps API.
+Launching the shell creates an api instance that allows you to execute requests against the Infochimps API.
 
 First you'll need to provide an api_key. 
 
-`>> INFOCHIMPS_API_KEY = 'api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469'`
+    >> INFOCHIMPS_API_KEY = 'api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469'  
 
-`>> api.trstrank('infochimps', INFOCHIMPS_API_KEY)`
+    >> api.trstrank('infochimps', INFOCHIMPS_API_KEY)   
 
 > {u'screen_name': u'infochimps',
->
 >  u'tq': u'94',
->
 >  u'trstrank': u'3.21',
->
 >  u'user_id': u'15748351'}
 
-`>> api.influence('infochimps', INFOCHIMPS_API_KEY)`
+    >> api.influence('infochimps', INFOCHIMPS_API_KEY)  
 
 > [result]
 
-`>> api.wordbag('infochimps', INFOCHIMPS_API_KEY)`
+    >> api.wordbag('infochimps', INFOCHIMPS_API_KEY)    
 
 > [result]
 
@@ -53,25 +50,34 @@ If you haven't already we suggest you make use of pip. Following is an example e
 
 _Install pip:_
 
-`$ sudo easy_install -U pip`
+    $ sudo easy_install -U pip  
 
 _Install virtualenv:_
 
-`$ sudo pip install -U virtualenv`
+    $ sudo pip install -U virtualenv    
 
 _Create a virtualenv._
 
-`$ mkdir -p ~/Envs`
+    $ mkdir -p ~/Envs
 
-`$ cd ~/Envs`
+    $ cd ~/Envs 
 
-`$ virtualenv --no-site-packages infochimps`
+    $ virtualenv --no-site-packages infochimps  
+    
+_Git the library._
 
-`$ source ~/Envs/bin/activate`
+    $ git clone git@github.com:gerlad/infochimpy.git    
+    $ cd infochimpy
 
-`(infochimps) cd /path/to/infochimpy`
+_Activate the env._
 
-`(infochimps) python setup.py install`
+    $ source ~/Envs/bin/activate    
 
-`(infochimps) ./chimpshell.py`
+_Install_
+
+    (infochimps) python setup.py install    
+
+_Try it!_
+
+    (infochimps) ./chimpshell.py    
 
