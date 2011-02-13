@@ -13,3 +13,13 @@ class ChimpsError(Exception):
 
     def __str__(self):
         return self.reason
+        
+class AuthError(ChimpsError):
+    """
+        Raised when you try to access a protected resource.
+    """
+    def __init__(self, msg):
+        self.msg = msg
+
+    def __str__(self):
+        return repr(self.msg)
