@@ -14,7 +14,6 @@ Launching the shell creates an api instance that allows you to execute requests 
 First you'll need to provide an api_key. 
 
     >> INFOCHIMPS_API_KEY = 'api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469'  
-
     >> api.trstrank('infochimps', INFOCHIMPS_API_KEY)   
 
 > {u'screen_name': u'infochimps',
@@ -58,16 +57,14 @@ _Install virtualenv:_
 
 _Create a virtualenv._
 
-    $ mkdir -p ~/Envs
-
+    $ mkdir -p ~/Envs   
     $ cd ~/Envs 
-
     $ virtualenv --no-site-packages infochimps  
     
 _Git the library._
 
     $ git clone git@github.com:gerlad/infochimpy.git    
-    $ cd infochimpy
+    $ cd infochimpy 
 
 _Activate the env._
 
