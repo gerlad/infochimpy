@@ -14,7 +14,7 @@ def convert_to_utf8_str(arg):
     elif not isinstance(arg, str):
         arg = str(arg)
     return arg
-    
+
 def encode_post_data_dict( post_data ):
     data = []
     for key in post_data.keys():
