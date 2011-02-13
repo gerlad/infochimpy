@@ -18,8 +18,11 @@ First you'll need to provide an api_key.
 `>> api.trstrank('infochimps', INFOCHIMPS_API_KEY)`
 
 > {u'screen_name': u'infochimps',
+>
 >  u'tq': u'94',
+>
 >  u'trstrank': u'3.21',
+>
 >  u'user_id': u'15748351'}
 
 `>> api.influence('infochimps', INFOCHIMPS_API_KEY)`
