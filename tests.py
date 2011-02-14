@@ -1,3 +1,6 @@
+# infochimpy
+# Please see LICENSE
+
 import unittest
 import random
 from time import sleep

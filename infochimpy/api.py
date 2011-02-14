@@ -1,8 +1,5 @@
 # infochimpy
-# Copyright 2011 Gerald McCollam
-# Portions Copyright 2009-2010 Joshua Roesslein
-
-# Please see license.txt.
+# Please see LICENSE
 
 import os
 from ConfigParser import ConfigParser

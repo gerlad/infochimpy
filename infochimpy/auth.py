@@ -1,11 +1,10 @@
 # infochimpy
-# Copyright 2011 Gerald McCollam
-# Portions Copyright 2009-2010 Joshua Roesslein
-
-# Please see license.txt.
+# Please see LICENSE
 
 import urllib
 from base64 import encodestring
+import oauth2 as oauth
+
 
 class Auth(object):
     """
@@ -36,4 +35,8 @@ class BasicAuthHandler(Auth):
     pass
     
 class OAuthHandler(Auth):
+    ''' For now, this function does OAuth authentication
+        directly to Twitter, for doing bulk lookups of 
+        screen_names for user_ids. Not sure if Infochimps does
+        this. I should probably ask.'''
     pass
