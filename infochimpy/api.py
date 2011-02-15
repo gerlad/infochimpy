@@ -94,7 +94,7 @@ class API(object):
     demographics = bind_api(
         path = '/web/an/de/demographics.json',
         payload_type = 'json',
-        required_params = ['ip'],
+        required_params = ['ip', 'apikey'],
         method = 'GET',
         require_auth = False,
     )
@@ -107,14 +107,15 @@ class API(object):
         method = 'GET',
         require_auth = False,
     )
-    
-    def lookup_users(self, user_ids=None, screen_names=None):
-        """ Perform bulk look up of users from user ID or screenname """
-        return self._lookup_users(list_to_csv(user_ids), list_to_csv(screen_names))
 
+    # TODO    
     _lookup_users = bind_api(
         path = '',
         payload_type = 'user', payload_list = True,
         required_params = ['user_id', 'screen_name'],
         require_auth = False,
     )
+
+    def lookup_users(self, user_ids=None, screen_names=None):
+        """ Perform bulk look up of users from user ID or screenname """
+        return self._lookup_users(list_to_csv(user_ids), list_to_csv(screen_names))

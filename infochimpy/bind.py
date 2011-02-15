@@ -55,6 +55,7 @@ def bind_api(**config):
             self.parameters = {}
             if args:
                 for idx, arg in enumerate(args):
+                    log.debug(idx)
                     self.parameters[self.required_params[idx]] = convert_to_utf8_str(arg)
             else:
                 if self.required_params:
@@ -67,6 +68,7 @@ def bind_api(**config):
             
             if len(self.parameters):
                 url = '%s?%s' % (base, urllib.urlencode(self.parameters))
+            log.debug(url)
             
             if self.api.secure:
                 conn = httplib.HTTPSConnection(self.host)
