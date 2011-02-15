@@ -108,11 +108,11 @@ class API(object):
         require_auth = False,
     )
     
-    # an/ip_census
+    # an/ip_census    
     ip_census = bind_api(
         path = '/web/an/ip_census/combined.json',
         payload_type = 'json',
-        required_params = ['ip'],
+        required_params = ['ip', 'apikey'],
         method = 'GET',
         require_auth = False,
     )
