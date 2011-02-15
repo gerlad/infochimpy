@@ -46,7 +46,7 @@ First you'll need to provide an api_key.
 * _ip_geo_          - IP address geo-location
 * _census_          - gathers U.S. Census data for a given IP address
 
-For more information on the Infochimps API see http://api.infochimps.com/.
+See the [Infochimps API](http://api.infochimps.com/) for more info.
 
 #### Installation
 
