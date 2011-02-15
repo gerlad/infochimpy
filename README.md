@@ -30,22 +30,27 @@ First you'll need to provide an api_key.
 > [result]
 
 #### Available API commands
-* _trstrank_        gets the trstrank and trstquotient for a given Twitter user
-* _stronglinks_     finds all of the Strong Links of a given Twitter user
-* _influence_       finds the level of inﬂuence for a given Twitter use
-* _wordbag_         finds the words most associated with a given Twitter use
-* _word_stats_      gets basic statistics associated with a given word on Twitter
-* _conversations_   create data frame of recent conversations between two Twitter user
-* _demographics_    gather demographic data for a given IP address from the U.S. Census
-* _ip_geo_          IP address geo-location
-* _census_          gathers U.S. Census data for a given IP address
-* _domain_          returns domain information for a given domain
+
+##### Twitter calls
+
+* _trstrank_        - gets the trstrank and trstquotient for a given Twitter user
+* _stronglinks_     - finds all of the Strong Links of a given Twitter user
+* _influence_       - finds the level of inﬂuence for a given Twitter use
+* _wordbag_         - finds the words most associated with a given Twitter use
+* _word_stats_      - gets basic statistics associated with a given word on Twitter
+* _conversations_   - create data frame of recent conversations between two Twitter user
+
+#####  Digital Element calls (see [here](http://api.infochimps.com/describe/web/an/de/))
+
+* _demographics_    - gather demographic data for a given IP address from the U.S. Census
+* _ip_geo_          - IP address geo-location
+* _census_          - gathers U.S. Census data for a given IP address
 
 For more information on the Infochimps API see http://api.infochimps.com/.
 
 #### Installation
 
-If you haven't already we suggest you make use of pip. Following is an example environment for infochimpy.
+If you haven't yet we suggest you use pip. Following is an example virtual environment for infochimpy.
 
 _Install pip:_
 
@@ -72,8 +77,12 @@ _Activate the env._
 
 _Install_
 
-    (infochimps) python setup.py install    
+    (infochimps) python setup.py install
 
+Alternatively you can use pip.
+        
+    (infochimps) pip install infochimpy
+    
 _Try it!_
 
     (infochimps) ./chimpshell.py    
